@@ -1,4 +1,9 @@
-DEADLINE: --/--/----
+DEADLINE: --/--/2026
 ______________________
-* This is a to-do list
-* Very advanced
+* Design Documnet
+* Camera
+* Player Movement
+* Player Attacks
+* Enemies
+* Level
+* Boss Attacks

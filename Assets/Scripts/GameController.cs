@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -23,6 +24,15 @@ public class GameController : MonoBehaviour
     private void Update()
     {
         if (debugAction.WasPressedThisFrame()) debug = !debug;
+
+        if (Input.GetKeyDown(KeyCode.Space)) InstantiateQTE().Set(0.20f, 0.4f, new Action[] { Test });
+    }
+
+    private void Test() => print("QTE Complete");
+
+    public QTE InstantiateQTE()
+    {
+        return Instantiate((GameObject)Resources.Load("QTE"), CanvasController.instance.transform).GetComponent<QTE>();
     }
 
     private void OnGUI()
