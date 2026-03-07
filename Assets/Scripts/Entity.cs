@@ -1,4 +1,5 @@
 using UnityEngine;
+using static UnityEngine.Rendering.DebugUI;
 
 public class Entity : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class Entity : MonoBehaviour
         get => _health;
         set
         {
-            _health = Mathf.Clamp(0, maxHealth, value);
+            _health = Mathf.Clamp(value, 0, maxHealth);
             if (_health <= 0 && !immortal) Die();
         }
     }
