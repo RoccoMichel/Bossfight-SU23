@@ -1,9 +1,13 @@
-DEADLINE: --/--/2026
+DEADLINE: 21/04/2026
 ______________________
-* Design Documnet
+* Design Documnet: https://docs.google.com/document/d/1_LSSxjgMuemdS3HolrlXZi9Gpck8G1MiQodSD0v05FE/edit?tab=t.0
 * Camera
 * Player Movement
 * Player Attacks
-* Enemies
-* Level
-* Boss Attacks
+* Minions
+* Envoirment Blockout
+* Boss Area Attacks
+* Basic Models and Textures
+* Basic Animations
+* Attack Stations
+* Cutscene system
