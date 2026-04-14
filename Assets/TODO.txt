@@ -3,6 +3,8 @@ ______________________
 * Design Documnet: https://docs.google.com/document/d/1_LSSxjgMuemdS3HolrlXZi9Gpck8G1MiQodSD0v05FE/edit?tab=t.0
 * Camera
 * Player Movement
+	* Moving
+	* Jumping
 * Player Attacks
 * Minions
 * Envoirment Blockout

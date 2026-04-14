@@ -25,7 +25,7 @@ public class GameController : MonoBehaviour
     {
         if (debugAction.WasPressedThisFrame()) debug = !debug;
 
-        if (Input.GetKeyDown(KeyCode.Space)) InstantiateQTE().Set(0.20f, 0.4f, new Action[] { Test });
+        //if (Input.GetKeyDown(KeyCode.Space)) InstantiateQTE().Set(0.20f, 0.4f, new Action[] { Test });
     }
 
     private void Test() => print("QTE Complete");
