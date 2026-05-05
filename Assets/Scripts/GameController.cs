@@ -23,6 +23,8 @@ public class GameController : MonoBehaviour
 
     private void Update()
     {
+        Application.targetFrameRate = 60;
+
         if (debugAction.WasPressedThisFrame()) debug = !debug;
 
         //if (Input.GetKeyDown(KeyCode.Space)) InstantiateQTE().Set(0.20f, 0.4f, new Action[] { Test });

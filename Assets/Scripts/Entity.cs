@@ -1,12 +1,11 @@
 using UnityEngine;
-using static UnityEngine.Rendering.DebugUI;
 
 public class Entity : MonoBehaviour
 {
     [Header("Entity Attributes")]
     public string identity = "Unnamed Entity";
     public float maxHealth = 10;
-    private float _health = 10;
+    [SerializeField] private float _health = 10;
     public float Health
     {
         get => _health;
@@ -28,6 +27,7 @@ public class Entity : MonoBehaviour
 
     public virtual void Damage(float amount)
     {
+        print("AU!");
         Health -= amount;
     }
 

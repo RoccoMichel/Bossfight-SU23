@@ -1,15 +1,11 @@
 DEADLINE: 21/04/2026
 ______________________
 * Design Documnet: https://docs.google.com/document/d/1_LSSxjgMuemdS3HolrlXZi9Gpck8G1MiQodSD0v05FE/edit?tab=t.0
-* Camera
-* Player Movement
-	* Moving
-	* Jumping
-* Player Attacks
-* Minions
 * Envoirment Blockout
 * Boss Area Attacks
 * Basic Models and Textures
 * Basic Animations
-* Attack Stations
-* Cutscene system
+* Area Attack
+* Spawn Minion
+* Stages
+* Obvious instruction text
