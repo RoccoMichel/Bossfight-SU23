@@ -27,7 +27,6 @@ public class Entity : MonoBehaviour
 
     public virtual void Damage(float amount)
     {
-        print("AU!");
         Health -= amount;
     }
 

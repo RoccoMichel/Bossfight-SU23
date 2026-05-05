@@ -23,7 +23,7 @@ public class Minion : Entity
     public void Attack()
     {
         if (nextAttackTime > Time.time) return;
-        print(identity);
+
         nextAttackTime = Time.time + timePerAttack;
         player.Health -= strength;
     }
@@ -32,6 +32,7 @@ public class Minion : Entity
     {
         agent.SetDestination(target.position);
         
-        if (agent.pathStatus == NavMeshPathStatus.PathComplete && agent.remainingDistance < 1.6f) Attack();
+        if (agent.pathStatus == NavMeshPathStatus.PathComplete && agent.remainingDistance < agent.stoppingDistance + 0.5f)
+            Attack();
     }
 }

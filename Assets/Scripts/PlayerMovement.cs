@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour
 {
+    public bool freeze;
     public float playerSpeed = 5.0f;
     public float jumpHeight = 1.5f;
     public float gravityValue = -9.81f;
@@ -49,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         playerVelocity.y += gravityValue * Time.deltaTime;
-        Vector3 finalMove = move * playerSpeed + Vector3.up * playerVelocity.y;
+        Vector3 finalMove = move * (freeze ? 0 : playerSpeed) + Vector3.up * playerVelocity.y;
         controller.Move(finalMove * Time.deltaTime);
     }
 }

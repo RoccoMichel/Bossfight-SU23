@@ -5,7 +5,6 @@ ______________________
 * Boss Area Attacks
 * Basic Models and Textures
 * Basic Animations
+* Healing
 * Area Attack
 * Spawn Minion
-* Stages
-* Obvious instruction text
